@@ -10,8 +10,10 @@ class API_Controller extends Controller
     public function __construct()
     {
         $GLOBALS['apikey'] = "d13e91a1d4msh0c25f02408bce1ap17c11bjsn5264a1b59bdc";
+        // $GLOBALS['apikey'] = "5c9e832696mshe052a5381f9bf37p118dbcjsn661ee514f136";  //Beshoy
+        // $GLOBALS['apikey'] = "902253d4f3msh7ba495ad9d7d90bp1ddc17jsna3c1fe639464";  //John
     }
-    //
+
     public function fetchAPI(Request $request)
     {
         $date = $request->input('birthday');
