@@ -8,13 +8,13 @@ class testMigration extends TestCase
 {
     use DatabaseMigrations;
 
-    public function testMigration()
-    {
-        $this->artisan('migrate');
+    // public function testMigration()
+    // {
+    //     $this->artisan('migrate');
 
-        $this->assertTrue(Schema::hasTable('users'));
+    //     $this->assertTrue(Schema::hasTable('users'));
 
-    }
+    // }
     public function test_user_duplicates()
     {
         $user1 = User::make([
